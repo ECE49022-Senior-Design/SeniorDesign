@@ -13,9 +13,7 @@ This repository contains **ALL components together**:
 
 ## Architecture
 
-CV (TCP JSON) --> Integration (TCP JSON) --> Arm
-                      |
-                      +--> Dashboard (TCP event stream)
+CV --> Integration--> Arm --> Dashboard
 
 ---
 
@@ -29,5 +27,6 @@ CV (TCP JSON) --> Integration (TCP JSON) --> Arm
 
 ---
 
+## Build
 ```bash
 make
