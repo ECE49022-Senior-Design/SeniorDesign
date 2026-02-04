@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>TrashBot Dashboard</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header class="header">
+    <h1>TrashBot Dashboard</h1>
+    <div id="conn" class="pill">Connecting…</div>
+  </header>
+
+  <main class="grid">
+    <section class="card">
+      <h2>Now Sorting</h2>
+      <div class="row"><span>Item:</span><b id="label">—</b></div>
+      <div class="row"><span>Recyclable:</span><b id="recyclable">—</b></div>
+      <div class="row"><span>Confidence:</span><b id="confidence">—</b></div>
+      <div class="row"><span>Location:</span><b id="location">—</b></div>
+    </section>
+
+    <section class="card">
+      <h2>Counts</h2>
+      <div class="row"><span>Total:</span><b id="total">0</b></div>
+      <div class="row"><span>Recyclable:</span><b id="countRec">0</b></div>
+      <div class="row"><span>Trash:</span><b id="countTrash">0</b></div>
+      <div class="row"><span>Errors:</span><b id="errors">0</b></div>
+    </section>
+
+    <section class="card">
+      <h2>System Status</h2>
+      <div class="row"><span>Vision:</span><b id="vision">offline</b></div>
+      <div class="row"><span>Arm:</span><b id="arm">unknown</b></div>
+      <div class="row"><span>Last Update:</span><b id="lastUpdate">—</b></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
